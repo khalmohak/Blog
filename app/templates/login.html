@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block form %}
+    <h1>Sign In</h1>
+    <form action="" method="post" novalidate>
+        {{form.hidden_tag()}} <!--protect against CSRF attack, generate token-->
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}
+
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}
+
+        </p>
+        <p>{{ form.rememberme() }} {{ form.rememberme.label}}</p>
+        <p>{{ form.submit() }}</p>
+
+
+
+    </form>
+
+
+{% endblock%}
