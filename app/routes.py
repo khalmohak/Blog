@@ -11,12 +11,14 @@ def index():
 	user = {'username':'Mohak'}
 	posts = [{
 		'author':{'username':'John'},
-		'body':'Hello this is John'
+		'body':'Hello this is John',
+		'title':'Post 1'
 	},
 	{
 
 		'author':{'username':'Lida'},
-		'body':'Im a Linda'
+		'body':'Im a Linda',
+		'title':'Post 2'
 	}
 
 
